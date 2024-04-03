@@ -31,7 +31,7 @@ RUN npm install --production
 COPY . .
 
 # Build the application
-RUN npm run build
+RUN npx @nestjs/cli build
 
 ################################################
 # Stage 2: Release the application stage            
